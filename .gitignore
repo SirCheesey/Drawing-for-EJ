@@ -1,0 +1,7 @@
+.DS_Store
+ToddlerDraw/ToddlerDraw.xcodeproj/
+ToddlerDraw/Generated/
+ToddlerDraw/build/
+ToddlerDraw/DerivedData/
+*.xcuserstate
+xcuserdata/

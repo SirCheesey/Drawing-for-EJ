@@ -1,0 +1,44 @@
+name: ToddlerDraw
+options:
+  bundleIdPrefix: com.toddlerdraw
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+configs:
+  Debug: debug
+  Release: release
+targets:
+  ToddlerDraw:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: ToddlerDraw
+    info:
+      path: Generated/Info.plist
+      properties:
+        CFBundleDisplayName: "Toddler Draw"
+        UILaunchScreen: {}
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UIViewControllerBasedStatusBarAppearance: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSPhotoLibraryAddUsageDescription: "Toddler Draw saves your child's drawings to your Photos library when you tap Save."
+    settings:
+      base:
+        TARGETED_DEVICE_FAMILY: "2"
+        PRODUCT_BUNDLE_IDENTIFIER: com.toddlerdraw.app
+        SWIFT_VERSION: "5.0"
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+schemes:
+  ToddlerDraw:
+    build:
+      targets:
+        ToddlerDraw: all
+    run:
+      config: Debug
